@@ -9,11 +9,7 @@
 
 //--------------------------------------------------------------------
 
-
-If num is infinite (either positive or negative) it should log out 'And beyond'.
-If num is finite and positive it should log out 'To infinity'.
-If num is finite and negative it should log out 'To negative infinity'.
-If num is zero it should log out 'Staying home'.
+// Challenge Beyond
 
 function beyond(num){
 	if(num === Infinity){
@@ -30,4 +26,4 @@ function beyond(num){
 	}
 }
 
-beyond(1);
+beyond(Infinity);
