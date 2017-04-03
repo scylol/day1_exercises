@@ -99,34 +99,51 @@
 //-------------------------------------------------------------
 
 
-function RockPaperScissors(userChoice){
-    var computer = 1 + Math.floor((Math.random()*3));
+// function RockPaperScissors(userChoice){
+//     var computer = 1 + Math.floor((Math.random()*3));
     
 
-    if(userChoice === computer) {
-    	console.log("Tie!");
-    }
-    else if((userChoice === 1 && computer ===2) || (userChoice === 2 && computer ===3) || (userChoice === 3 && computer ===1))  {
-    	console.log("You Won!");
-    }
-    else if((userChoice === 2 && computer ===1) || (userChoice === 3 && computer ===2) || (userChoice === 1 && computer ===3)) {
-    	console.log("You Lost!");
-    }
+//     if(userChoice === computer) {
+//     	console.log("Tie!");
+//     }
+//     else if((userChoice === 1 && computer ===2) || (userChoice === 2 && computer ===3) || (userChoice === 3 && computer ===1))  {
+//     	console.log("You Won!");
+//     }
+//     else if((userChoice === 2 && computer ===1) || (userChoice === 3 && computer ===2) || (userChoice === 1 && computer ===3)) {
+//     	console.log("You Lost!");
+//     }
     
-    else {
-    	console.log("Please enter a correct value");
-    }
+//     else {
+//     	console.log("Please enter a correct value");
+//     }
 
 
 
   
+// }
+
+// RockPaperScissors(2);
+//____________________________________________________
+
+//Repeat a String
+
+function repeatString(str,counter) {
+
+	if(isNaN(str) || counter < 0 ) {
+		throw new Error("counter must be a number & cannot be negative.");
+	}
+	console.log(str.repeat(counter)); 
+	
+
 }
 
-RockPaperScissors(2);
 
-
-
-
+try{
+	repeatString("hi", "hello");
+}
+catch(e) {
+	console.log(e.message);
+}
 
 
 
