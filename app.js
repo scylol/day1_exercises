@@ -101,20 +101,23 @@
 
 function RockPaperScissors(userChoice){
     var computer = 1 + Math.floor((Math.random()*3));
-    var choice = 0;
+    
 
-    if(userChoice === 'rock') {
-    	choice = 1;
+    if(userChoice === computer) {
+    	console.log("Tie!");
     }
-    else if(userChoice === 'scissors') {
-    	choice = 2;
+    else if((userChoice === 1 && computer ===2) || (userChoice === 2 && computer ===3) || (userChoice === 3 && computer ===1))  {
+    	console.log("You Won!");
     }
-    else if(userChoice === 'paper') {
-    	choice = 3;
+    else if((userChoice === 2 && computer ===1) || (userChoice === 3 && computer ===2) || (userChoice === 1 && computer ===3)) {
+    	console.log("You Lost!");
     }
+    
     else {
     	console.log("Please enter a correct value");
     }
+
+
 
   
 }
